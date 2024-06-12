@@ -39,9 +39,7 @@ export const getData = new Promise((resolve, reject) => {
     }
     reject(new Error('Filed to load'));
 });
-export const getUser = new Promise((resolve, reject)=> {
-    
-})
+
 export const getUserByID = (id: string) => {
       const user = rows.find((item) => {
         let a = item.id.toString()
@@ -71,7 +69,6 @@ export const createPosts = async (data: any) => {
     },
   })
     .then((response) => response.json())
-    .then((json) => console.log(json))
     .then(() => getPosts())
 }
 

@@ -28,18 +28,18 @@ const Content = styled.div`
 `;
 
 const Card = (user: User) => {
-    debugger
-  return (<Container>
-    <Content>
-      {user.user ? 
-        <>
-            <span>UserID: {user.user.id}</span>
-            <span>UserName: {user.user.name}</span>
-            <span>UserAge: {user.user.age}</span>
-        </>
-       : <>No Content</>}
-    </Content>
-  </Container>
+  return (
+    <Container>
+      <Content>
+        {user.user ? 
+          <>
+              <span>UserID: {user.user.id}</span>
+              <span>UserName: {user.user.name}</span>
+              <span>UserAge: {user.user.age}</span>
+          </>
+        : <>No Content</>}
+      </Content>
+    </Container>
   )
 };
 

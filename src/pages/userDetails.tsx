@@ -26,7 +26,6 @@ const UserDetails = () => {
     useEffect(() => {
        let user =  getUserByID(id);
        setUser(user)
-       debugger
     }, [])
 
     return (

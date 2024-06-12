@@ -24,7 +24,6 @@ export const themeToggle = createSlice({
   initialState,
   reducers: {
     changeTheme: (state, action: PayloadAction<themeType>) => {
-      console.log(action.payload,"changeTheme PayloadAction")
        Object.assign(state, { theme: action.payload } );
     },
   }

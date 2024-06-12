@@ -16,7 +16,6 @@ export default function Users(){
 
     useEffect(() => {
         getData.then((res: Users) => {
-            debugger;
             dispatch(setUsers(res))
         })
     },[users])
